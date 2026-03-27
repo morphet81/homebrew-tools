@@ -1,4 +1,4 @@
-class Fcli < Formula
+class FigmaCli < Formula
   desc "CLI for the Figma REST API"
   homepage "https://github.com/morphet81/figma-cli"
   url "https://github.com/morphet81/figma-cli.git",
