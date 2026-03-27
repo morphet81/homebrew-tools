@@ -5,8 +5,7 @@ A [Homebrew tap](https://docs.brew.sh/Taps) for morphet81 CLI tools. Add this ta
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
-- **`figma-cli`** is built from source with Rust via Homebrew’s `rust` dependency; the first install may take several minutes.
-- **`lazyjira`** is installed from [GitHub release](https://github.com/morphet81/lazyjira/releases) binaries (Apple Silicon and Intel macOS, and x86_64 Linux). No compiler is required.
+- **`figma-cli`** ([releases](https://github.com/morphet81/figma-cli/releases)) and **`lazyjira`** ([releases](https://github.com/morphet81/lazyjira/releases)) ship as prebuilt binaries for Apple Silicon and Intel macOS, and x86_64 Linux. The Figma tool is installed as **`fcli`**. No compiler is required.
 
 ## Add the tap
 
@@ -50,14 +49,6 @@ brew tap                              # should list morphet81/homebrew-tools
 brew search figma-cli                 # should find the tap formula
 fcli --version                        # after installing figma-cli
 which lazyjira                        # after installing lazyjira
-```
-
-## Head builds
-
-`figma-cli` can be built from the latest default branch instead of the pinned git revision:
-
-```bash
-brew install figma-cli --HEAD
 ```
 
 ## Updating
