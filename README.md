@@ -1,11 +1,12 @@
 # homebrew-tools
 
-A [Homebrew tap](https://docs.brew.sh/Taps) with command-line tools built from source (Rust). Add this tap on your Mac, then install formulas with `brew install`.
+A [Homebrew tap](https://docs.brew.sh/Taps) for morphet81 CLI tools. Add this tap on your Mac (or Linux, where supported), then install formulas with `brew install`.
 
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
-- Formulas compile with Rust via Homebrew’s `rust` dependency; first install may take several minutes.
+- **`figma-cli`** is built from source with Rust via Homebrew’s `rust` dependency; the first install may take several minutes.
+- **`lazyjira`** is installed from [GitHub release](https://github.com/morphet81/lazyjira/releases) binaries (Apple Silicon and Intel macOS, and x86_64 Linux). No compiler is required.
 
 ## Add the tap
 
@@ -48,16 +49,15 @@ brew install morphet81/homebrew-tools/lazyjira
 brew tap                              # should list morphet81/homebrew-tools
 brew search figma-cli                 # should find the tap formula
 fcli --version                        # after installing figma-cli
-lazyjira --help                       # after installing lazyjira
+which lazyjira                        # after installing lazyjira
 ```
 
 ## Head builds
 
-To build from the latest default branch instead of the pinned revision:
+`figma-cli` can be built from the latest default branch instead of the pinned git revision:
 
 ```bash
 brew install figma-cli --HEAD
-brew install lazyjira --HEAD
 ```
 
 ## Updating
