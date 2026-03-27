@@ -41,6 +41,17 @@ brew install morphet81/homebrew-tools/lazyjira
 | ----------- | ------------------------------------ | --------------------------------------------- |
 | `figma-cli` | CLI for the Figma REST API           | [morphet81/figma-cli](https://github.com/morphet81/figma-cli)   |
 | `lazyjira`  | Terminal UI for Jira boards and tickets | [morphet81/lazyjira](https://github.com/morphet81/lazyjira) |
+| `lazyjira@0.4.1` | Same app, pinned **v0.4.1**; installs as `lazyjira-0.4.1` | same |
+
+### Older lazyjira (exact version)
+
+`brew install lazyjira` tracks the latest release. To keep **v0.4.1** on your PATH next to the current `lazyjira`, install:
+
+```bash
+brew install lazyjira@0.4.1
+```
+
+That formula installs the binary as **`lazyjira-0.4.1`** so it does not overwrite `lazyjira`. The formula name uses the full patch version so it matches the GitHub tag you are pinning.
 
 ## Verify
 
@@ -57,5 +68,5 @@ Upgrade like any other Homebrew formula after this tap is updated:
 
 ```bash
 brew update
-brew upgrade figma-cli lazyjira
+brew upgrade figma-cli lazyjira lazyjira@0.4.1
 ```
