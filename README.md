@@ -5,9 +5,8 @@ A [Homebrew tap](https://docs.brew.sh/Taps) for morphet81 CLI tools. Add this ta
 ## Prerequisites
 
 - [Homebrew](https://brew.sh/)
-- **`figma-cli`** ([releases](https://github.com/morphet81/figma-cli/releases)) and **`lazyjira`** ([releases](https://github.com/morphet81/lazyjira/releases)) ship as prebuilt binaries for Apple Silicon and Intel macOS, and x86_64 Linux. The Figma tool is installed as **`fcli`**. No compiler is required.
+- **`figma-cli`** ([releases](https://github.com/morphet81/figma-cli/releases)), **`lazyjira`** ([releases](https://github.com/morphet81/lazyjira/releases)), and **`quantum-budget`** ([releases](https://github.com/morphet81/quantum-budget/releases)) ship as prebuilt binaries for Apple Silicon and Intel macOS, and x86_64 Linux. The Figma tool is installed as **`fcli`**; Quantum Budget’s API server is **`quantum-budget-api`**. No compiler is required.
 - **`maestro`** ([releases](https://github.com/morphet81/maestro/releases)) ships as a prebuilt binary for Apple Silicon/Intel macOS and amd64/arm64 Linux. Requires **Docker** or **Podman** at runtime.
-- **`quantum-budget`** ([releases](https://github.com/morphet81/quantum-budget/releases)) currently ships a Linux x86_64 API binary only; it is installed as **`quantum-budget-api`**.
 
 ## Add the tap
 
@@ -47,7 +46,7 @@ brew install morphet81/homebrew-tools/quantum-budget
 | ----------- | ------------------------------------ | --------------------------------------------- |
 | `figma-cli` | CLI for the Figma REST API           | [morphet81/figma-cli](https://github.com/morphet81/figma-cli)   |
 | `lazyjira`  | Terminal UI for Jira boards and tickets | [morphet81/lazyjira](https://github.com/morphet81/lazyjira) |
-| `quantum-budget` | HTTP API for [Quantum Budget](https://github.com/morphet81/quantum-budget) (Linux x86_64; binary `quantum-budget-api`) | [morphet81/quantum-budget](https://github.com/morphet81/quantum-budget) |
+| `quantum-budget` | HTTP API server for [Quantum Budget](https://github.com/morphet81/quantum-budget); installs as **`quantum-budget-api`** | [morphet81/quantum-budget](https://github.com/morphet81/quantum-budget) |
 | `lazyjira@0.4.1` | Same app, pinned **v0.4.1**; installs as `lazyjira-0.4.1` | same |
 | `maestro`   | Automated workflow orchestration for AI coding agents | [morphet81/maestro](https://github.com/morphet81/maestro) |
 
