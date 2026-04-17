@@ -3,14 +3,14 @@ class Lazyjira < Formula
   homepage "https://github.com/morphet81/lazyjira"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/morphet81/lazyjira/releases/download/v0.5.0/lazyjira-v0.5.0-aarch64-apple-darwin.tar.gz"
-    sha256 "1bc242b4f3e85b874ae86bda04123fd482251d81c9c758a534925976ea6f874d"
+    url "https://github.com/morphet81/lazyjira/releases/download/v0.6.0/lazyjira-v0.6.0-aarch64-apple-darwin.tar.gz"
+    sha256 "f774201887d5c7fe4883592ac87e7dd2698929be76ff2790db1842e1350caa60"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/morphet81/lazyjira/releases/download/v0.5.0/lazyjira-v0.5.0-x86_64-apple-darwin.tar.gz"
-    sha256 "e1235683975308f4f82b981509284f0e1d1ad1beb163e33c29442b68a1fc3a67"
+    url "https://github.com/morphet81/lazyjira/releases/download/v0.6.0/lazyjira-v0.6.0-x86_64-apple-darwin.tar.gz"
+    sha256 "cc099cab7ff1c40c9aea347d39cb27a8b12fca72ce0884d7e4e504d247ad343c"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/morphet81/lazyjira/releases/download/v0.5.0/lazyjira-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ff7b92b2f260cc72f30e59787d479bf4829feae37b0f3d7972db9e88c5acacbe"
+    url "https://github.com/morphet81/lazyjira/releases/download/v0.6.0/lazyjira-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "b4b3a5429133bea7904ad071f04bd0b83c8417baf8ef97dd79b5bb979510ba5a"
   else
     odie "lazyjira: unsupported platform (macOS Apple Silicon or Intel, or Linux x86_64 only)"
   end
