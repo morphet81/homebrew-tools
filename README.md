@@ -6,6 +6,7 @@ A [Homebrew tap](https://docs.brew.sh/Taps) for morphet81 CLI tools. Add this ta
 
 - [Homebrew](https://brew.sh/)
 - **`figma-cli`** ([releases](https://github.com/morphet81/figma-cli/releases)) and **`lazyjira`** ([releases](https://github.com/morphet81/lazyjira/releases)) ship as prebuilt binaries for Apple Silicon and Intel macOS, and x86_64 Linux. The Figma tool is installed as **`fcli`**. No compiler is required.
+- **`maestro`** ([releases](https://github.com/morphet81/maestro/releases)) ships as a prebuilt binary for Apple Silicon/Intel macOS and amd64/arm64 Linux. Requires **Docker** or **Podman** at runtime.
 
 ## Add the tap
 
@@ -24,6 +25,7 @@ After tapping:
 ```bash
 brew install figma-cli
 brew install lazyjira
+brew install maestro
 ```
 
 ### Install without tapping first
@@ -33,6 +35,7 @@ You can install directly from the GitHub tap path (Homebrew will use the tap as 
 ```bash
 brew install morphet81/homebrew-tools/figma-cli
 brew install morphet81/homebrew-tools/lazyjira
+brew install morphet81/homebrew-tools/maestro
 ```
 
 ## Available formulas
@@ -42,6 +45,7 @@ brew install morphet81/homebrew-tools/lazyjira
 | `figma-cli` | CLI for the Figma REST API           | [morphet81/figma-cli](https://github.com/morphet81/figma-cli)   |
 | `lazyjira`  | Terminal UI for Jira boards and tickets | [morphet81/lazyjira](https://github.com/morphet81/lazyjira) |
 | `lazyjira@0.4.1` | Same app, pinned **v0.4.1**; installs as `lazyjira-0.4.1` | same |
+| `maestro`   | Automated workflow orchestration for AI coding agents | [morphet81/maestro](https://github.com/morphet81/maestro) |
 
 ### Older lazyjira (exact version)
 
@@ -68,5 +72,5 @@ Upgrade like any other Homebrew formula after this tap is updated:
 
 ```bash
 brew update
-brew upgrade figma-cli lazyjira lazyjira@0.4.1
+brew upgrade figma-cli lazyjira lazyjira@0.4.1 maestro
 ```
