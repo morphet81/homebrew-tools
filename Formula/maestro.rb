@@ -1,20 +1,20 @@
 class Maestro < Formula
   desc "Automated workflow orchestration for AI coding agents"
   homepage "https://github.com/morphet81/maestro"
-  version "0.4.1"
+  version "0.4.2"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/morphet81/maestro/releases/download/vv0.4.1/maestro-darwin-arm64"
-    sha256 "3e1be7461137c9b6f02ae0b2712bbfbfb89791e1f2a2118d6827621adf5f0e4e"
+    url "https://github.com/morphet81/maestro/releases/download/vv0.4.2/maestro-darwin-arm64"
+    sha256 "f157533c2047a7c53c539a58d9447c93d5272235746b6147a0d8d86317d252bd"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/morphet81/maestro/releases/download/vv0.4.1/maestro-darwin-amd64"
-    sha256 "cfdd23a6ce760ec3ec61bcefdbe8652a62d439ed99cdb06703f7f00b3b444f99"
+    url "https://github.com/morphet81/maestro/releases/download/vv0.4.2/maestro-darwin-amd64"
+    sha256 "bc249e36be7bcbedc28ac532a858767eb47f7fb0c21708354d1e94013b833c9d"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/morphet81/maestro/releases/download/vv0.4.1/maestro-linux-amd64"
-    sha256 "857e5180edfae278263babd21960445c583e3fdf6a9287ee55bec1582c018119"
+    url "https://github.com/morphet81/maestro/releases/download/vv0.4.2/maestro-linux-amd64"
+    sha256 "9e6d80068b5d0099c0f893381d2674ca880fb21518ea846ca1ee98efbda40386"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/morphet81/maestro/releases/download/vv0.4.1/maestro-linux-arm64"
-    sha256 "0e23aa64694ffa86d8a8d211c42aca102340b2016311dfb6f58ef6f85b19abb9"
+    url "https://github.com/morphet81/maestro/releases/download/vv0.4.2/maestro-linux-arm64"
+    sha256 "55cd41411a4923e5dd70a6f03bda1d6e4ffbdeb29f3e44cf203383bb3703de40"
   else
     odie "maestro: unsupported platform (macOS Apple Silicon/Intel or Linux amd64/arm64 only)"
   end
