@@ -7,6 +7,7 @@ A [Homebrew tap](https://docs.brew.sh/Taps) for morphet81 CLI tools. Add this ta
 - [Homebrew](https://brew.sh/)
 - **`figma-cli`** ([releases](https://github.com/morphet81/figma-cli/releases)), **`lazyjira`** ([releases](https://github.com/morphet81/lazyjira/releases)), and **`quantum-budget`** ([releases](https://github.com/morphet81/quantum-budget/releases)) ship as prebuilt binaries for Apple Silicon and Intel macOS, and x86_64 Linux. The Figma tool is installed as **`fcli`**; Quantum Budget’s API server is **`quantum-budget-api`**. No compiler is required.
 - **`maestro`** ([releases](https://github.com/morphet81/maestro/releases)) ships as a prebuilt binary for Apple Silicon/Intel macOS and amd64/arm64 Linux. Requires **Docker** or **Podman** at runtime.
+- **`scrutiny`** ([releases](https://github.com/morphet81/scrutiny/releases)) ships as a prebuilt binary for Apple Silicon macOS and amd64/arm64 Linux.
 
 ## Add the tap
 
@@ -27,6 +28,7 @@ brew install figma-cli
 brew install lazyjira
 brew install maestro
 brew install quantum-budget
+brew install scrutiny
 ```
 
 ### Install without tapping first
@@ -38,6 +40,7 @@ brew install morphet81/homebrew-tools/figma-cli
 brew install morphet81/homebrew-tools/lazyjira
 brew install morphet81/homebrew-tools/maestro
 brew install morphet81/homebrew-tools/quantum-budget
+brew install morphet81/homebrew-tools/scrutiny
 ```
 
 ## Available formulas
@@ -49,6 +52,7 @@ brew install morphet81/homebrew-tools/quantum-budget
 | `quantum-budget` | HTTP API server for [Quantum Budget](https://github.com/morphet81/quantum-budget); installs as **`quantum-budget-api`** | [morphet81/quantum-budget](https://github.com/morphet81/quantum-budget) |
 | `lazyjira@0.4.1` | Same app, pinned **v0.4.1**; installs as `lazyjira-0.4.1` | same |
 | `maestro`   | Automated workflow orchestration for AI coding agents | [morphet81/maestro](https://github.com/morphet81/maestro) |
+| `scrutiny`  | Code review + ticket implementation CLI and agent skills | [morphet81/scrutiny](https://github.com/morphet81/scrutiny) |
 
 ### Older lazyjira (exact version)
 
@@ -75,5 +79,5 @@ Upgrade like any other Homebrew formula after this tap is updated:
 
 ```bash
 brew update
-brew upgrade figma-cli lazyjira lazyjira@0.4.1 maestro quantum-budget
+brew upgrade figma-cli lazyjira lazyjira@0.4.1 maestro quantum-budget scrutiny
 ```
