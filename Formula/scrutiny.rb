@@ -1,17 +1,17 @@
 class Scrutiny < Formula
   desc "Code review and ticket implementation CLI for AI agent skills"
   homepage "https://github.com/morphet81/scrutiny"
-  version "0.8.2"
+  version "0.8.4"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.2/scrutiny-aarch64-apple-darwin"
-    sha256 "85fd2ea1d840d77bc2acbed1cf10a503c3707c5354284a093c6c224117505dd9"
+    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.4/scrutiny-aarch64-apple-darwin"
+    sha256 "486da7363198acc0ebec7f7382a9c26f49187d5044b7f5718e693c5c86b53eb6"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.2/scrutiny-x86_64-unknown-linux-gnu"
-    sha256 "f5a3b42b61cb08c7c69861cb309a802b9573528bb67e88289b4e34ad8796394a"
+    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.4/scrutiny-x86_64-unknown-linux-gnu"
+    sha256 "57a6ee4d4c81192342eafb8a1612c21f8f26ac4ffeb29f93b14b80876eefd8ae"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.2/scrutiny-aarch64-unknown-linux-gnu"
-    sha256 "4540a1b1d59844e458df08674d5d1445b9a941b3ac344fbdbafd6eed057b9033"
+    url "https://github.com/morphet81/scrutiny/releases/download/v0.8.4/scrutiny-aarch64-unknown-linux-gnu"
+    sha256 "7df41f11b505ebdf90a7eedd2f9783193f54649ed76e45927b9807dca5c60df0"
   else
     odie "scrutiny: unsupported platform (macOS Apple Silicon or Linux amd64/arm64 only)"
   end
